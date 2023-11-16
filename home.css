@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: row;
     height: 90%;
+    background-color: var(--secondary);
 }
 
 #left-content {
@@ -14,6 +15,7 @@
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
+    color: var(--primary);
 }
 
 #get-started-btn {
