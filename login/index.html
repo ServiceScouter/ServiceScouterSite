@@ -17,24 +17,35 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
             <p>Search</p>
         </div>
-        <div id="login-btn" onclick="window.location.href = '../login'">
-            <p>Login</p>
-        </div>
     </div>
     <div id="content">
-        <div id="left-content">
-            <p>Login</p>
-            <div id="email-container">
-                <img class="field-icon" src="">
-                <input type="text" placeholder="Email or username">
+        <div id="box">
+            <div id="left-box">
+                <h1>Login</h1>
+                <div class="field-container">
+                    <img class="field-icon" src="../assets/email.png">
+                    <input class="field-input" type="text" placeholder="Email or username">
+                </div>
+                <div class="field-container">
+                    <img class="field-icon" src="../assets/password.png">
+                    <input class="field-input" type="password" placeholder="Password">
+                </div>
+                <p id="forgot-passwd">Forgot password?</p>
+                <div id="continue-btn" onclick="window.location.href = '../profile'">
+                    <h2>Continue</h2>
+                </div>
+                <div id="divider-container">
+                    <div class="divider"></div>
+                    <p>or</p>
+                    <div class="divider"></div>
+                </div>
+                <div id="sign-up-btn" onclick="window.location.href = '../register'">
+                    <h2>Sign up</h2>
+                </div>
             </div>
-            <div id="passwd-container">
-                <img class="field-icon" src="">
-                <input type="password" placeholder="Password">
+            <div id="right-box">
+                <img id="panel-img" src="../assets/auth.jpg">
             </div>
-        </div>
-        <div id="right-content">
-            <img id="panel-img" src="">
         </div>
     </div>
 </body>
