@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Service Scouter | Profile</title>
+    
+        <link rel="stylesheet" href="../assets/global.css">
+        <link rel="stylesheet" href="profile.css">
+    </head>
+<body>
+    <div id="navbar">
+        <img id="logo" src="../assets/logo.png" onclick="window.location.href = '../'">
+        <p>SERVICE SCOUTER</p>
+        <div id="divider"></div>
+        <div id="search" onclick="window.location.href = '../search'">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            <p>Search</p>
+        </div>
+    </div>
+    <div id="content">
+        <div id="slice"></div>
+        <div id="left-content">
+            <img id="pfp-icon" src="../assets/pfp.jpg">
+            <div id="action-bar">
+                <div id="accout">Account</div>
+                <div id="interests">Interests</div>
+                <div id="preferences">Preferences</div>
+                <div id="log-out-btn">Log out</div>
+            </div>
+        </div>
+        <div id="account-settings" class="right-content" >
+            <p id="account-info">User123 | example@gmail.com</p>
+            <div class="page-row">
+                <p class="page-title">Profile > Account Settings</p>
+                <div id="favorites-btn" onclick="window.location.href = '../favorites'">View Favorites</div>
+                <div id="save-btn" onclick="location.reload()">Save</div>
+            </div>
+            <div class="field-container">
+                <div class="field-label">Username:</div>
+                <input class="field-input" type="text" placeholder="New username" value="User123">
+            </div>
+            <div class="field-container">
+                <div class="field-label">Email address:</div>
+                <input class="field-input" type="text" placeholder="New email" value="example@gmail.com">
+            </div>
+            <div class="field-container">
+                <div class="field-label">Date of birth:</div>
+                <input class="field-input" type="text" placeholder="Update date of birth" value="01/01/2001">
+            </div>
+            <div class="field-container">
+                <div class="field-label">Current school:</div>
+                <input class="field-input" type="text" placeholder="New school" value="Rochester Institute of Technology">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
