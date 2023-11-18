@@ -65,6 +65,10 @@ body {
     border-radius: 1rem;
 }
 
+#create-btn > h2 {
+    margin: 0.25rem 0 0.25rem 0;
+}
+
 #divider-container {
     display: flex;
     flex-direction: row;
@@ -74,8 +78,7 @@ body {
 }
 
 #divider-container > p {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 5% 0 5%;
 }
 
 .divider {
@@ -90,6 +93,10 @@ body {
     color: var(--secondary);
     text-align: center;
     border-radius: 1rem;
+}
+
+#back-btn > h2 {
+    margin: 0.25rem 0 0.25rem 0;
 }
 
 #right-box {
