@@ -16,6 +16,14 @@
     background-color: var(--secondary);
 }
 
+.account-info {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    font-size: 24px;
+    color: var(--primary);
+}
+
 #left-content {
     display: flex;
     flex-direction: column;
@@ -26,14 +34,53 @@
 }
 
 #pfp-icon {
+    position: absolute;
+    top: 23%;
+    width: 16%;
     border-radius: 50%;
     border: solid 6px var(--primary);
+}
+
+#action-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    height: 30%;
+    margin-top: 50%;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.action-bar-item {
+    color: var(--primary);
+    height: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.action-bar-selected {
+    color: var(--accent);
+    border-bottom: solid 4px var(--accent);
+}
+
+#log-out-btn {
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 20px;
+    color: var(--secondary);
 }
 
 .right-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     height: 100%;
     width: 60%;
@@ -47,13 +94,6 @@
     color: var(--accent);
 }
 
-.account-info {
-    width: 100%;
-    text-align: left;
-    font-size: 24px;
-    color: var(--primary);
-}
-
 .page-row {
     color: var(--primary);
     width: 100%;
@@ -61,6 +101,7 @@
     flex-direction: row;
     align-items: center;
     font-size: 24px;
+    margin-top: 20%;
 }
 
 .page-title {
@@ -114,10 +155,44 @@
     color: var(--primary);
 }
 
+.field-icon {
+    transform: scale(25%);
+    cursor: pointer;
+}
+
 .field-input {
     width: 25%;
     outline: none; 
     border: none;
     border-bottom: solid 2px var(--primary);
     font-size: 18px;
+}
+
+.add-chip {
+    background-color: green;
+    color: white;
+    width: 8%;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.chip-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.75rem;
+}
+
+.chip {
+    height: 30%;
+    background-color: var(--secondary);
+    margin-right: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }

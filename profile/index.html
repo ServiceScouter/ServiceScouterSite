@@ -19,18 +19,19 @@
         </div>
     </div>
     <div id="content">
-        <div id="slice"></div>
+        <div id="slice">
+            <p class="account-info"><span class="highlight">User123</span> <span class="sep">|</span> example@gmail.com</p>
+        </div>
         <div id="left-content">
             <img id="pfp-icon" src="../assets/pfp.jpg">
             <div id="action-bar">
-                <div id="accout">Account</div>
-                <div id="interests">Interests</div>
-                <div id="preferences">Preferences</div>
-                <div id="log-out-btn">Log out</div>
+                <div class="action-bar-item" id="account" onclick="window.location.href = './?page=account'">Account</div>
+                <div class="action-bar-item" id="interests" onclick="window.location.href = './?page=interests'">Interests</div>
+                <div class="action-bar-item" id="preferences" onclick="window.location.href = './?page=preferences'">Preferences</div>
+                <div class="action-bar-item" id="log-out-btn">Log out</div>
             </div>
         </div>
-        <div id="account-settings" class="right-content" >
-            <p class="account-info"><span class="highlight">User123</span> <span class="sep">|</span> example@gmail.com</p>
+        <div id="account-content" class="right-content" style="display: none;">
             <div class="page-row">
                 <p class="page-title">Profile <span class="sep">></span> <span class="highlight">Account Settings</span></p>
                 <div class="favorites-btn" onclick="window.location.href = '../favorites'">View Favorites</div>
@@ -53,6 +54,39 @@
                 <input class="field-input" type="text" placeholder="New school" value="Rochester Institute of Technology">
             </div>
         </div>
+        <div id="interests-content" class="right-content" style="display: none;">
+            <div class="page-row">
+                <p class="page-title">Profile <span class="sep">></span> <span class="highlight">Interests</span></p>
+                <div class="favorites-btn" onclick="window.location.href = '../favorites'">View Favorites</div>
+                <div class="save-btn" onclick="location.reload()">Save</div>
+            </div>
+            <div class="field-container">
+                <div class="field-label">Academic:</div>
+                <div class="add-chip">Add</div>
+            </div>
+            <div class="chip-container">
+                <div class="chip">Software<img class="field-icon" src="../assets/close.png"></div>
+                <div class="chip">Math<img class="field-icon" src="../assets/close.png"></div>
+                <div class="chip">Technology<img class="field-icon" src="../assets/close.png"></div>
+            </div>
+            <div class="field-container">
+                <div class="field-label">Volunteer:</div>
+                <div class="add-chip">Add</div>
+            </div>
+            <div class="chip-container">
+                <div class="chip">Environment<img class="field-icon" src="../assets/close.png"></div>
+                <div class="chip">Kitchens<img class="field-icon" src="../assets/close.png"></div>
+            </div>
+        </div>
+        <div id="preferences-content" class="right-content" style="display: none;">
+            <div class="page-row">
+                <p class="page-title">Profile <span class="sep">></span> <span class="highlight">Preferences</span></p>
+                <div class="favorites-btn" onclick="window.location.href = '../favorites'">View Favorites</div>
+                <div class="save-btn" onclick="location.reload()">Save</div>
+            </div>
+            <p>Dick and cock 2</p>
+        </div>
     </div>
+    <script src="profile.js"></script>
 </body>
 </html>
